@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <title>Survey Submission</title>
+</head>
+<body>
+    <div class="bg-success p-2 text-dark bg-opacity-50 p-5 rounded col-3 mx-auto d-grid gap-3">
+        <h1 class="text-center"><strong>Dojo Survey: Results</strong></h1>
+        <p>Name: {{ session ['name'] }}</p>
+        <p>Dojo Location: {{ session ['location'] }}</p>
+        <p>Favorite Language: {{ session ['fav_language'] }}</p>
+        <p>Comment(s): {{ session ['comment'] }}</p>
+    </div>
+</body>
+</html>
